@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <nav class="navbar navbar-dark bg-dark">
+        <span class="navbar-brand mb-0 h1">Page and Character Counter App</span>
+        <a href="challenge1.html">Home |</a>
+        <a href="challenge2.html">maxMinAvg |</a>
+        <a href="challenge3.html">printIntSum |</a>
+        <a href="challenge4.html">printMaxArray |</a>
+        <a href="challenge5.html">returnArrayCountGreaterY |</a>
+        <a href="challenge6.html">returnOddArray |</a>
+        <a href="challenge7.html">printArrayVals |</a>
+        <a href="challenge8.html">printArrayVals |</a>
+        <a href="challenge9.html">printArrayVals |</a>
+        <a href="challenge10.html">printArrayVals |</a>
+        <a href="challenge11.html">printArrayVals |</a>
+        <a href="challenge12.html">printArrayVals |</a>
+        <a href="challenge13.html">printArrayVals |</a>
+        <script>
+            function MaxMinAvr(arr) {
+
+                let sum = 0;
+                for (let i = 0; i < arr.length; i++) {
+
+                    sum += arr[i];
+
+                }
+                let max = Math.max(...arr);
+                let min = Math.min(...arr);
+                let avr = sum / arr.length;
+
+                return `Maximum = ${max} <br> Minimum = ${min}<br>  Average = ${avr}`
+            }
+
+            document.write(MaxMinAvr([2, 3, 5, 8, 6]))
+        </script>
+</body>
+
+</html>
